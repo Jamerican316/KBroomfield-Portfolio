@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
-	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/main.css">
 	<title>Document</title>
 	<style>
 		body {
@@ -53,6 +54,7 @@
 		    background: #fff;
 		    padding: 10px;
 		    margin-bottom: 1.5em;
+		    border-radius: 15px;
 		}
 
 		.main_content {
@@ -64,6 +66,41 @@
 			height: 100%;
 			margin-bottom: 2em;
 		}
+
+		.skills .skillset .item {
+		    margin-bottom: 30px;
+		}
+
+		.skills .skillset .level-title {
+    font-size: 16px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 10;
+}
+
+.skills .skillset .level-title .level-label {
+    color: #bec0cd;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Lato,arial,sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.skills .skillset .level-bar {
+    height: 15px;
+    background: #e8e8e8;
+}
+
+.element.style {
+    width: 75%;
+}
+.skills .skillset .level-bar-inner {
+    height: 15px;
+    background: #1029E0;
+}
+
 		footer {
     	background: #32383e;
     	color: #fff;
@@ -190,7 +227,46 @@
 	        			</ul>
 	        		</div>
 	        	</aside>
-	        	<aside class="skills section"></aside>
+	        	<aside class="skills section">
+	        		<div class="content_holder">
+	        			<h2>Skills</h2>
+	        			<div class="skillset content">
+	        				<p>
+	        				Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.
+	        				</p>
+	        				<div class="my_skills">
+	        					 <div class="item">
+                                    <h3 class="level-title">HTML5<span class="level-label">Working Knowledge</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">CSS3<span class="level-label">Working Knoledge</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">jQuery<span class="level-label">Working Knowledge</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="45%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">Javascript<span class="level-label">Working Knowledge</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="55%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+	        				</div>
+	        			</div>
+	        		</div>
+	        	</aside>
 				<aside class="education section col-md-4 col-sm-12 col-xs-12">Education</aside>
 				<aside class="interest section col-md-4 col-sm-12 col-xs-12">Interests</aside>
 			</div>
@@ -202,6 +278,9 @@
 	            <small>Designed inspired by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley </a>  for developers</small>
 	    </div><!--//container-->
 	</footer><!--//footer-->
+	 <!-- Javascript -->          
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
 
