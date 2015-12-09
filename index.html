@@ -8,74 +8,83 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<title>Document</title>
 	<style>
-		body {
-		    font-family: 'Lato', arial, sans-serif;
-		    color: #434343;
-		    background: #dae3e7;
-		    font-size: 16px;
-		    -webkit-font-smoothing: antialiased;
-		    -moz-osx-font-smoothing: grayscale;
-		}
-
-		.wrapper {
-			padding-top: 60px;
-    		padding-bottom: 60px;
-		}
-
-		header {
-		    padding: 30px 0;
-		    background: #f5f5f5;
-		    border-top: 10px solid #2467AF;
-		    color: #49515a;
-		    font-size: 38px;
-		    text-align: center;
-		    margin-bottom: 5px;
-		}
-
-		header.container{
-			overflow: hidden;
-			height: 10em;
-		}
-
-		.name_and_social{
-			display:inline-block;
-		}
-
-		.social, .name {
-		    color: #49515a;
-		    font-size: 38px;
-		    margin-bottom: 5px;
-		    margin-top: 30px;
-		}
-
-
-		.section {
-			height: 100%;
-		    background: #fff;
-		    padding: 10px;
-		    margin-bottom: 1.5em;
-		    border-radius: 15px;
-		}
-
-		.main_content {
-			height: 100%;
-			margin-bottom: 2em;
-		}
-
-		.complementary_info {
-			height: 100%;
-			margin-bottom: 2em;
-		}
-
-		.skills .skillset .item {
-		    margin-bottom: 30px;
-		}
-
-		.skills .skillset .level-title {
+body {
+    font-family: 'Lato', arial, sans-serif;
+    color: #434343;
+    background: #dae3e7;
     font-size: 16px;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 10;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+header {
+    padding: 30px 0;
+    background: #f5f5f5;
+    border-top: 10px solid #2467AF;
+    color: #49515a;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header.container{
+	overflow: hidden;
+	height: 10em;
+}
+
+.name_and_social{
+	display:inline-block;
+}
+
+.social, .name {
+    color: #49515a;
+    font-size: 38px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+
+.section {
+	height: 100%;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+}
+
+.main_content {
+	height: 100%;
+	margin-bottom: 2em;
+}
+
+.complementary_info {
+	height: 100%;
+	margin-bottom: 2em;
+}
+
+.content_holder .project a {
+	color: #434343;
+}
+
+.content_holder .project a:hover {
+	color: #337ab7;
+	
+}
+
+.skills .skillset .item {
+    margin-bottom: 30px;
+}
+
+.skills .skillset .level-title {
+font-size: 16px;
+position: relative;
+margin-top: 0;
+margin-bottom: 10px;
 }
 
 .skills .skillset .level-title .level-label {
@@ -101,11 +110,12 @@
     background: #1029E0;
 }
 
-		footer {
-    	background: #32383e;
-    	color: #fff;
-    	padding: 10px 0;
-		}
+footer {
+background: #32383e;
+color: #fff;
+padding: 10px 0;
+text-align: center;
+}
 	</style>
 </head>
 
@@ -123,17 +133,17 @@
 	            </ul>
 			</div>
 		</div>
-	</header>
+	</header><!--header-->
 	<div class=" wrapper container-fluid">
 		<div class=" content row">
 			<div class="main_content col-md-8 col-sm-12 col-xs-12">
 				<section class="about section">
 					<h2 class="heading">About Me</h2>
 					<div class="content">
-						<p> I'm currently a CPA working for a small public accounting firm as tax staff accountant. However, for the past three months I've been taking THINKFUL's front-end developer course. Before THINKFUL's front-end course I was using a variety of source to nail down the basics.</p>
-						<p> When I'm not <span style="font-weight:bold">GLUED TO THE KEYBOARD</span> some of my hobbies I like to study theology &amp; the bible. I've been an athlete for a better part of my life so I have to be activeroad-- biking to camping- gotta stay moving. Aside from being active I enjoy a bit of gaming.  Game of choice, or rather the only game I really play is Street fighter.  Street Fighter V is the latest rendition and it drops early next year. Lastly, I like to listen to music and play the guitar, watch anime and just hang-out!</p>
+						<p>I'm currently a CPA working for a small public accounting firm as tax staff accountant. However, for the past three months I've been making my way through THINKFUL's front-end developer course. Before THINKFUL's front-end course I was using a variety of sources (TreeHouse and Code Academy to name a few) to nail down the basics.</p>
+						<p>When I'm not <span style="font-weight:bold">GLUED TO THE KEYBOARD</span>, some of my hobbies include: studying theology &amp; the bible, staying active, as I've been an athlete for a better part of my life so I have to be active, whether it's road-biking, camping, yoga... I gotta stay moving. Aside from being active I enjoy a bit of gaming and the game of choice, or rather the only game I really play is Street fighter.  Street Fighter V is the latest rendition and it drops early next year. Lastly, I like to listen to music and play the guitar, watch anime and movies and just hang-out!</p>
 					</div>
-				</section>
+				</section><!--about-->
 				<section class="projects section">
 	 				<h2 class="heading">Projects:</h2>
 	 				<div class="content_holder">
@@ -142,63 +152,68 @@
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="quiz_object_caption col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a>Gospel Quiz - Object oriented with javascript</a></h3>
-			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+			      				<h3 class="title"><a href="https://github.com/Jamerican316/Gospel-Truth" target="blank">Gospel Quiz - Object oriented with javascript</a></h3>
+			        			<p>Used one object to do the heavy lifting, and jQuery event handlers to dynamically create quiz content.</p>
 			      			</div>
-			      		</div>
+			      		</div><!--quiz-->
 			      		<div class="project row">
 			      			<a class="hot_cold col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="hot_cold_readMe col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a>Hot &amp; Cold - number guessing game</a></h3>
-			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+			      				<h3 class="title"><a href="https://github.com/Jamerican316/hot-or-cold-starter/tree/gh-pages" target="blank">Hot &amp; Cold - number guessing game</a></h3>
+			        			<p>Big take away from this project is uses of functions to handle p.</p>
 			      			</div>
-			      		</div>
+			      		</div><!--hot_cold-->
 			      		<div class="project row">
 			      			<a class="shopping_list col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="shopping_list_readMe col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a href="">Shopping list app - Dynamcially created with jQuery</a></h3>
+			      				<h3 class="title"><a href="https://github.com/Jamerican316/Shopping-list" target="blank">Shopping list app - Dynamcially created with jQuery</a></h3>
 			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>	     
 			      			</div>
-		      			</div>
+		      			</div><!--shopping_list-->
 		      			<div class="project row">
 			      			<a class="fizzBuzz col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="fizzBuzz_readMe col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a href="">FizzBuzz challenge - javascript and jQuery</a></h3>
+			      				<h3 class="title"><a href="https://github.com/Jamerican316/FizzBuzz-Challenge" target="blank">FizzBuzz challenge - javascript and jQuery</a></h3>
 			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
 			      			</div>
-		      			</div>
+		      			</div><!--fizzbuzz-->
 		      			<div class="project row">
 			      			<a class="jQuery_Ryu col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="jQuery_Ryu_readMe col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a href="">jQuery Ryu - jQuery animated Ryu</a></h3>
+			      				<h3 class="title"><a href="https://github.com/Jamerican316/jQuery-Ryu" target="blank">jQuery Ryu - jQuery animated Ryu</a></h3>
 			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
 			      			</div>
-		      			</div>
+		      			</div><!--ryu-->
 		      			<div class="project row">
 			      			<a class="karma_landingPage col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="karma_landingPage_readMe col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a href="">Karma landing page</a></h3>
+			      				<h3 class="title"><a href="https://github.com/Jamerican316/Karma-Clone" target="blank">Karma landing page</a></h3>
 			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
 			      			</div>
-	      				</div>
+	      				</div><!--karma-->
 	      			</div>
-	      		</section>
+	      		</section><!--projects section-->
 	      		<section class="experience-work section">
 	      			<h2 class="heading">Eperience</h2>
 		      		<div class="content_holder">
 		      			<div class="experience_caption">
 		      				<h3 class="title">Thinkful: Front-end Course - (September 25, 2015 - December 3, 2015)</h3>
 		      				<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+		      			</div>
+		      			<div class="experience_caption">
+		      				<h3 class="title">Learning Fuze: Intro to Web Development - (Septermber 12, 2015)</h3>
+		      				<p>I obtain a better understanding of the basics of front-end web development and had the
+		      				 opportunity to receive direct feedback on my approach to web development.</p>
 		      			</div>
 		      			<div class="experience_caption">
 		      				<h3 class="title">Tree House: build - (August 2015 - Present)</h3>
@@ -209,13 +224,13 @@
 		      				<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
 		      			</div>
 		      		</div>
-	      		</section>
-	      		<section class="github section">
+	      		</section><!--experience-work section-->
+	      		<!--<section class="github section">
 		      		<div class="content_holder">
 		      			<h2 clas="heading">My GitHub</h2>
 
 		      		</div>
-	      		</section>
+	      		</section> will add github feed soon-->
 	      	</div><!--main_content sections-->
 			<div class="complementary_info col-md-4 col-sm-12 col-xs-12">
 				<aside class="basic info section">
@@ -232,7 +247,7 @@
 	        			<h2>Skills</h2>
 	        			<div class="skillset content">
 	        				<p>
-	        				Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.
+	        				I have solid understanding of HTML5 and a practical understanding of CSS3.  My experience in jQuery and Javascript is basic.  I'm currently working to bettering my thought-logic and debugging skills.
 	        				</p>
 	        				<div class="my_skills">
 	        					 <div class="item">
@@ -267,8 +282,15 @@
 	        			</div>
 	        		</div>
 	        	</aside>
-				<aside class="education section col-md-4 col-sm-12 col-xs-12">Education</aside>
-				<aside class="interest section col-md-4 col-sm-12 col-xs-12">Interests</aside>
+				<aside class="education section">
+					<div class="content_holder">
+						<h2>Education</h2>
+						<ul class="list-unstyled">
+							<li><span style="font-weight:bold">BSc Accounting</span></li>
+							<li>University of La Verne (2010)</li>
+						</ul>
+					</div> 
+				</aside>
 			</div>
 		</div>
 	</div>
