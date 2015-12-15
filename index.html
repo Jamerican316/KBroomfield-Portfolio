@@ -6,7 +6,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<title>Document</title>
+	<title>Portfolio</title>
 	<style>
 body {
     font-family: 'Lato', arial, sans-serif;
@@ -60,6 +60,18 @@ header.container{
 .main_content {
 	height: 100%;
 	margin-bottom: 2em;
+}
+
+.intro_alpha {
+  font-family:Gentium, OdysseaU, GraecaUBSU;
+  font-size:200%;
+  transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    margin-top: .5em;
+    width: 5em;
+    background-color: transparent;
+    color:rebeccapurple;
 }
 
 .complementary_info {
@@ -145,17 +157,21 @@ text-align: center;
 					</div>
 				</section><!--about-->
 				<section class="projects section">
-	 				<h2 class="heading">Projects:</h2>
+	 				<h2 class="heading">Current Projects:</h2>
 	 				<div class="content_holder">
-						<div class="project row">	
-					 		<a class="quiz_object_app col-md-4 col-sm-4 col-xs-12">
-			        			PROJECT IMAGE
-			      			</a>
-			      			<div class="quiz_object_caption col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a href="https://github.com/Jamerican316/Gospel-Truth" target="blank">Gospel Quiz - Object oriented with javascript</a></h3>
-			        			<p>Used one object to do the heavy lifting, and jQuery event handlers to dynamically create quiz content.</p>
-			      			</div>
-			      		</div><!--quiz-->
+	 					<div class="current_project">
+	 						<h3 class="title"><a href="https://jamerican316.github.io/Gospel-Truth/index.html" target="blank">Gospel Quiz</a></h3>
+	 						<div class="gospel_quiz_pic"> 
+	 						<a href="https://jamerican316.github.io/Gospel-Truth/index.html" target="blank"><img class="gospel_quiz" src="images/gospel-quiz-intro-ss.PNG"></a>
+	 						</div>
+	 						<button class="intro_alpha">α</button>
+	 					</div><!--quiz-->
+		      			<div class="quiz_object_caption">
+		        			<p>Used one object to do the heavy lifting, and jQuery event handlers to dynamically create quiz content.</p>
+		      			</div>
+	 				</div>
+	 			<hr class="divider">
+	 				<div class="content_holder">
 			      		<div class="project row">
 			      			<a class="hot_cold col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
@@ -284,6 +300,11 @@ text-align: center;
 	        	</aside>
 				<aside class="education section">
 					<div class="content_holder">
+						<h2>Certification</h2>
+						<ul class="list-unstyled">
+							<li><span style="font-weight:bold">Certified Public Accountant (CPA)</span></li>
+							<li>California Board of Accountancy (2014 - 2016)</li>
+						</ul>
 						<h2>Education</h2>
 						<ul class="list-unstyled">
 							<li><span style="font-weight:bold">BSc Accounting</span></li>
