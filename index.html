@@ -62,20 +62,48 @@ header.container{
 	margin-bottom: 2em;
 }
 
-.intro_alpha {
-  font-family:Gentium, OdysseaU, GraecaUBSU;
-  font-size:200%;
-  transform: translate(-50%,-50%);
-    position: absolute;
-    left: 50%;
-    margin-top: .5em;
-    width: 5em;
-    background-color: transparent;
-    color:rebeccapurple;
+.content_holder {
+	padding:2em;
+}
+
+.gospel_quiz{
+	max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hot_cold_game, .shopping_list, .jQuery_Ryu, .karma_landingPage { 
+	max-width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .complementary_info {
 	height: 100%;
+	margin-bottom: 2em;
+}
+
+.current_project {
+	text-align: center;	
+}
+
+.current_project > h3 {
+	
+}
+
+h2, .title, .heading, .desc, .name {
+	font-weight: 900;
+}
+
+.title a {
+	color: #434343;
+}
+
+.quiz_object_caption{
+	margin-top: 1em;
+}
+
+.project {
 	margin-bottom: 2em;
 }
 
@@ -161,24 +189,24 @@ text-align: center;
 	 				<div class="content_holder">
 	 					<div class="current_project">
 	 						<h3 class="title"><a href="https://jamerican316.github.io/Gospel-Truth/index.html" target="blank">Gospel Quiz</a></h3>
+	 						<p>Used one object to do the heavy lifting, and jQuery event handlers to dynamically create quiz content.</p>
 	 						<div class="gospel_quiz_pic"> 
-	 						<a href="https://jamerican316.github.io/Gospel-Truth/index.html" target="blank"><img class="gospel_quiz" src="images/gospel-quiz-intro-ss.PNG"></a>
+	 							<a href="https://jamerican316.github.io/Gospel-Truth/index.html" target="blank"><img class="gospel_quiz" src="images/gospel-quiz-intro-ss.PNG"></a>
 	 						</div>
-	 						<button class="intro_alpha">α</button>
 	 					</div><!--quiz-->
 		      			<div class="quiz_object_caption">
-		        			<p>Used one object to do the heavy lifting, and jQuery event handlers to dynamically create quiz content.</p>
+			      			<p>This project is still in the works, however, I have a minimal viable product. To complete this project research and analysis still has to conducted in order to obtain the precise information needed for the target audiance.</p>
 		      			</div>
 	 				</div>
 	 			<hr class="divider">
 	 				<div class="content_holder">
 			      		<div class="project row">
-			      			<a class="hot_cold col-md-4 col-sm-4 col-xs-12">
-			        			PROJECT IMAGE
+			      			<a class="hot_cold col-md-4 col-sm-4 col-xs-12" href="https://jamerican316.github.io/hot-or-cold-starter/index.html" target="blank">
+			        			<img class="hot_cold_game" src="images/hot-cold-ss.PNG">
 			      			</a>
 			      			<div class="hot_cold_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/hot-or-cold-starter/tree/gh-pages" target="blank">Hot &amp; Cold - number guessing game</a></h3>
-			        			<p>Big take away from this project is uses of functions to handle p.</p>
+			        			<p>Big take away from this project was the use of paramenters and the use of functions to handle a desired task.</p>
 			      			</div>
 			      		</div><!--hot_cold-->
 			      		<div class="project row">
@@ -187,25 +215,16 @@ text-align: center;
 			      			</a>
 			      			<div class="shopping_list_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/Shopping-list" target="blank">Shopping list app - Dynamcially created with jQuery</a></h3>
-			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>	     
+			        			<p>Building on my knowledge of event handlers this project introduced dynamic creation and removal of elements by use of functions and event handlers.</p>	     
 			      			</div>
 		      			</div><!--shopping_list-->
-		      			<div class="project row">
-			      			<a class="fizzBuzz col-md-4 col-sm-4 col-xs-12">
-			        			PROJECT IMAGE
-			      			</a>
-			      			<div class="fizzBuzz_readMe col-md-8 col-sm-8 col-xs-12">
-			      				<h3 class="title"><a href="https://github.com/Jamerican316/FizzBuzz-Challenge" target="blank">FizzBuzz challenge - javascript and jQuery</a></h3>
-			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-			      			</div>
-		      			</div><!--fizzbuzz-->
 		      			<div class="project row">
 			      			<a class="jQuery_Ryu col-md-4 col-sm-4 col-xs-12">
 			        			PROJECT IMAGE
 			      			</a>
 			      			<div class="jQuery_Ryu_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/jQuery-Ryu" target="blank">jQuery Ryu - jQuery animated Ryu</a></h3>
-			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+			        			<p>An introduction to jQuery. I used event handlers to show, hide elemtns.</p>
 			      			</div>
 		      			</div><!--ryu-->
 		      			<div class="project row">
@@ -214,7 +233,7 @@ text-align: center;
 			      			</a>
 			      			<div class="karma_landingPage_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/Karma-Clone" target="blank">Karma landing page</a></h3>
-			        			<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+			        			<p>This a copy of the old Karma landing page with a responsive design.</p>
 			      			</div>
 	      				</div><!--karma-->
 	      			</div>
@@ -263,7 +282,7 @@ text-align: center;
 	        			<h2>Skills</h2>
 	        			<div class="skillset content">
 	        				<p>
-	        				I have solid understanding of HTML5 and a practical understanding of CSS3.  My experience in jQuery and Javascript is basic.  I'm currently working to bettering my thought-logic and debugging skills.
+	        				I have solid understanding of HTML5 and a practical understanding of CSS3.  Basic, but growing knowledge of Javascript and jQuery.  I'm currently working to bettering my thought-logic and debugging skills.
 	        				</p>
 	        				<div class="my_skills">
 	        					 <div class="item">
