@@ -17,6 +17,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+	list-style-image: url('images/13694-200.png');
+}
+
 .wrapper {
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -48,6 +52,32 @@ header.container{
     margin-top: 30px;
 }
 
+.container > .btn {
+	margin-top: 6.5em;
+	font-weight: 700;
+}
+
+a.btn-cta-primary, .btn-cta-primary {
+    background: #1029E0;
+    border: 1px solid #1029E0;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+
+
+a.btn-cta-secondary, .btn-cta-secondary {
+    background: #1029E0;
+    border: 1px solid #1029E0;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    margin-top: .5em;
+    font-weight: 700;
+}
 
 .section {
 	height: 100%;
@@ -72,10 +102,18 @@ header.container{
     position: relative;
 }
 
-.hot_cold_game, .shopping_list, .jQuery_Ryu, .karma_landingPage { 
+.hot_cold_game, .shopping_list, .ryu, .karma_landingPage { 
 	max-width: 100%;
     height: auto;
     position: relative;
+}
+
+.shopping_list { 
+	max-width: 100%;
+    height: auto;
+    position: relative;
+	padding: .2em;
+	background-color:  #E4E4E4;
 }
 
 .complementary_info {
@@ -99,21 +137,30 @@ h2, .title, .heading, .desc, .name {
 	color: #434343;
 }
 
+p > a {
+	color:#1029E0;
+}
+
+.more-link .fa-external-link{
+	color:#1029E0;
+}
+
 .quiz_object_caption{
 	margin-top: 1em;
 }
+
 
 .project {
 	margin-bottom: 2em;
 }
 
-.content_holder .project a {
-	color: #434343;
-}
-
 .content_holder .project a:hover {
 	color: #337ab7;
 	
+}
+
+.experience_caption {
+	margin-bottom: 2em;
 }
 
 .skills .skillset .item {
@@ -172,6 +219,7 @@ text-align: center;
 	                <li><a href="https://github.com/Jamerican316" target="blank"><i class="fa fa-github-alt"></i></a></li>             
 	            </ul>
 			</div>
+			<a class="btn btn-cta-primary pull-right" href="mailto:karanja.broomfield@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a> 
 		</div>
 	</header><!--header-->
 	<div class=" wrapper container-fluid">
@@ -195,8 +243,9 @@ text-align: center;
 	 						</div>
 	 					</div><!--quiz-->
 		      			<div class="quiz_object_caption">
-			      			<p>This project is still in the works, however, I have a minimal viable product. To complete this project research and analysis still has to conducted in order to obtain the precise information needed for the target audiance.</p>
+			      			<p>This project is still in the works, however, I have a minimal viable product. To complete this project research and analysis still has to be conducted in order to obtain the precise information needed for the target audiance.</p>
 		      			</div>
+		      			 <a class="btn btn-cta-secondary" href="https://github.com/Jamerican316/Gospel-Truth/tree/gh-pages" target="_blank"><i class="fa fa-github"></i> View on GitHub</a>
 	 				</div>
 	 			<hr class="divider">
 	 				<div class="content_holder">
@@ -207,33 +256,37 @@ text-align: center;
 			      			<div class="hot_cold_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/hot-or-cold-starter/tree/gh-pages" target="blank">Hot &amp; Cold - A number guessing game</a></h3>
 			        			<p>Big take away from this project was the use of paramenters and the use of functions to handle a desired task.</p>
+			        			<p><a class="more-link" href="https://github.com/Jamerican316/hot-or-cold-starter/tree/gh-pages" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>	
 			      			</div>
 			      		</div><!--hot_cold-->
-			      		<div class="project row">
-			      			<a class="shopping_list col-md-4 col-sm-4 col-xs-12">
-			        			PROJECT IMAGE
+			      		<div class="project shopping row">
+			      			<a class="shopping_list col-md-4 col-sm-4 col-xs-12" href="https://jamerican316.github.io/Fav-list/index.html" target="blank">
+			        			<img class="shopping_list" src="images/Fav-list-ss.PNG">
 			      			</a>
 			      			<div class="shopping_list_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/Shopping-list" target="blank">Shopping list app - Dynamcially created with jQuery</a></h3>
-			        			<p>Building on my knowledge of event handlers this project introduced dynamic creation and removal of elements by use of functions and event handlers.</p>	     
+			        			<p>Building on my knowledge of event handlers this project introduced dynamic creation and removal of elements by use of functions and event handlers.</p>
+			        			<p><a class="more-link" href="https://github.com/Jamerican316/Shopping-list" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>	     
 			      			</div>
 		      			</div><!--shopping_list-->
 		      			<div class="project row">
-			      			<a class="jQuery_Ryu col-md-4 col-sm-4 col-xs-12">
-			        			PROJECT IMAGE
+			      			<a class="jQuery_Ryu col-md-4 col-sm-4 col-xs-12" href="https://jamerican316.github.io/jQuery-Ryu/index.html" target="blank">
+			        			<img class="ryu" src="images/jQuery-Ryu-ss.PNG">
 			      			</a>
 			      			<div class="jQuery_Ryu_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/jQuery-Ryu" target="blank">jQuery Ryu - jQuery animated Ryu</a></h3>
-			        			<p>An introduction to jQuery. I used event handlers to show, hide elemtns.</p>
+			        			<p>An introduction to jQuery. I used event handlers to show, hide elements.</p>
+			        			<p><a class="more-link" href="https://github.com/Jamerican316/jQuery-Ryu" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
 			      			</div>
 		      			</div><!--ryu-->
 		      			<div class="project row">
-			      			<a class="karma_landingPage col-md-4 col-sm-4 col-xs-12">
-			        			PROJECT IMAGE
+			      			<a class="karma_landingPage col-md-4 col-sm-4 col-xs-12" href="https://jamerican316.github.io/Karma-Clone/index.html" target="blank">
+			        			<img class="karma_landingPage" src="images/karma-clone-ss.PNG">
 			      			</a>
 			      			<div class="karma_landingPage_readMe col-md-8 col-sm-8 col-xs-12">
 			      				<h3 class="title"><a href="https://github.com/Jamerican316/Karma-Clone" target="blank">Karma landing page</a></h3>
-			        			<p>This a copy of the old Karma landing page with a responsive design.</p>
+			        			<p>Cloned the old Karma landing page; made use of media queries to make it responsive.</p>
+			        			<p><a class="more-link" href="https://github.com/Jamerican316/Karma-Clone" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
 			      			</div>
 	      				</div><!--karma-->
 	      			</div>
@@ -242,26 +295,31 @@ text-align: center;
 	      			<h2 class="heading">Eperience</h2>
 		      		<div class="content_holder">
 		      			<div class="experience_caption">
-		      				<h3 class="title">Thinkful: Front-end Course - (September 25, 2015 - December 3, 2015)</h3>
+		      				<h4 class="title">Thinkful Frontend Development Course</h3>
+		      				<h5 class="title"><span style="font-weight: bold;">Student</span><span style="font-weight: normal;"> | September 25, 2015 - December 3, 2015 | Skills acquired:</span></h5>
 		      				<ul>
 		      					<li>Developed wireframe fundamentals in an effort to think before code.</li>
 		      					<li>Worked to build a solid foundation of working knowledge in HTML5 and CSS3.</li>
 		      					<li>Using the terminal I used Git and GitHub to effectively and efficiently mangage my workflow and collaborate with my mentor.</li>
-		      					<li></li>
+		      					<li>Established a good foundation of best practices and logic to continue my own continued advancement via self-teaching and community.</li>
 		      				</ul>
 		      			</div>
 		      			<div class="experience_caption">
-		      				<h3 class="title">Learning Fuze: Intro to Web Development - (Septermber 12, 2015)</h3>
-		      				<p>I obtain a better understanding of the basics of front-end web development and had the
-		      				 opportunity to receive direct feedback on my approach to web development.</p>
+		      				<h4 class="title">Learning Fuze: Intro to Web Development</h4>
+		      				<h5 class="title"><span style="font-weight: bold;">Student</span><span style="font-weight: normal;"> | Septermber 19, 2015) | Skills acquired:</span></h5>
+		      				<ul>
+		      					<li>Gain a clearer understanding of HTML5 semantics and CSS3 properties adn selectors.</li>
+		      					<li>Learned the best practice order for tackling web page development.</li>
+		      					<li>Learned how to use Google Chrome developer tools to inspect code.</li>
+		      				</ul>
 		      			</div>
 		      			<div class="experience_caption">
-		      				<h3 class="title">Tree House: build - (August 2015 - Present)</h3>
-		      				<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-		      			</div>
-		      			<div class="experience_caption">
-		      				<h3 class="title">Code Academy: build - (August 2015 - Present)</h3>
-		      				<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+		      				<h4 class="title">Tree House Instructional Courses - HTML, CSS, Javascript</h4>
+		      				<h5 class="title"><span style="font-weight: bold;">Student</span><span style="font-weight: normal;"> | August 2015 - Present | Skills acquired:</span></h5>
+		      				<ul>
+		      					<li>Completed HTML and CSS basic and intermediate course.</li>
+		      					<li>Completed Javascript basic course; currently working my way though intermediate courses- loops, arrays, and objects.
+		      				</ul>
 		      			</div>
 		      		</div>
 	      		</section><!--experience-work section-->
@@ -287,7 +345,7 @@ text-align: center;
 	        			<h2>Skills</h2>
 	        			<div class="skillset content">
 	        				<p>
-	        				I have solid understanding of HTML5 and a practical understanding of CSS3.  Basic, but growing knowledge of Javascript and jQuery.  I'm currently working to bettering my thought-logic and debugging skills.
+	        				I have solid understanding of HTML5 and a practical understanding of CSS3.  I have a basic, but growing knowledge of Javascript and jQuery.  I'm currently working to bettering my thought-logic and debugging skills by continuing to undertake personal projects.
 	        				</p>
 	        				<div class="my_skills">
 	        					 <div class="item">
